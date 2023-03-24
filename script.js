@@ -13,12 +13,11 @@ function sendEmail() {
 	var subject = document.getElementById('subject').value;
 	
 	var forms = document.querySelectorAll('emailForm');
-	console.log(forms);
-	//var mail ='mailto:sakis530@hotmail?subject='+subject+'&body='+message
-	//window.open(mail);
+	var mail ='mailto:sakis530@hotmail?subject='+subject+'&body='+message
+	window.open(mail);
 
-	//var modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('emailModal'));
-	//modal.hide();
+	var modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('emailModal'));
+	modal.hide();
 }
 
 
