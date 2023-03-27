@@ -1,4 +1,6 @@
-body{
+@media only screen and (max-width: 390px) {  
+
+   body{
     font-family: Century Gothic;
 }
 
@@ -58,5 +60,9 @@ body{
 .hover-text {
   color: black;
   padding-left: 0px;
+}   
+
 }
+
+
 
