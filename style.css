@@ -1,7 +1,5 @@
-@media only screen and (max-width: 390px) {  
-
-   body{
-    font-family: Century Gothic;
+body{
+    font-family: 'Montserrat', sans-serif;
 }
 
 .bg-image { 
@@ -60,9 +58,5 @@
 .hover-text {
   color: black;
   padding-left: 0px;
-}   
-
 }
-
-
 
