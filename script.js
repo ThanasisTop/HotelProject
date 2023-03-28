@@ -25,9 +25,9 @@ function weather(){
 
 	xhttp.onload = function () {
         weatherObj = JSON.parse(this.responseText);
-        let temp = "Temperature: "+ weatherObj.hourly.temperature_2m.slice(-1) + weatherObj.hourly_units.temperature_2m;
-        let weatherCode = weatherObj.hourly.weathercode.slice(-1);
-        let time = weatherObj.hourly.time.slice(-1);
+        let temp = "Temperature: "+ weatherObj.hourly.temperature_2m[0] + weatherObj.hourly_units.temperature_2m;
+        let weatherCode = weatherObj.hourly.weathercode[0];
+        //let time = weatherObj.hourly.time.slice(-1);
         let weatherIcon;
         let date = new Date();
         let dateStr = "Date: "+date.toString().split(' ')[0]+" "
