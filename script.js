@@ -104,4 +104,9 @@ function weather(){
    .then((response) => response.json())
    .then((json) => console.log(json));
 }
+
+function viewModal(id){
 	
+	var modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('image1Modal'));
+	modal.show();
+}	
