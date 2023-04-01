@@ -192,7 +192,7 @@ textarea.form-control {
     transform: translateX(-50%);
     color: #fff; }
   .site-hero.overlay:before {
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.1);
     content: "";
     position: absolute;
     height: 100vh;
@@ -642,6 +642,9 @@ textarea.form-control {
     padding: 10px; }
   .footer-section .link li {
     margin-bottom: 10px; }
+  span.h5{
+    color: #1275D1;
+  }
 
 .footer-newsletter .form-group {
   position: relative; }
@@ -1214,8 +1217,10 @@ textarea.form-control {
     letter-spacing: .1em;
     font-weight: bold; }
     .custom-breadcrumbs li a {
-      font-weight: normal; }
+      font-weight: normal; 
+      color: #fff;}
       .custom-breadcrumbs li a:hover {
+        text-decoration: underline;
         color: #fff; }
 
 .timeline-item {
