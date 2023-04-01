@@ -305,8 +305,14 @@ textarea.form-control {
     -ms-transform: rotate(-135deg);
     transform: rotate(-135deg); }
 
-.section {
+.reserve-section {
   padding: 20em 0; }
+  @media (max-width: 991.98px) {
+    .reserve-section {
+      padding: 15em 0; } }
+
+.section {
+  padding: 7em 0; }
   @media (max-width: 991.98px) {
     .section {
       padding: 3em 0; } }
