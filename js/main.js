@@ -213,7 +213,7 @@
 })(jQuery);
 
 
-function checkAvailability(checkin_date, checkout_date) {
+function checkAvailability(checkin_date, checkout_date, adults=2, children=0) {
   var dateCheckIn = checkin_date.split(' ')[0];
   var monthCheckIn = checkin_date.split(' ')[1];
   var yearCheckIn = checkin_date.split(' ')[2];
@@ -256,9 +256,10 @@ function checkAvailability(checkin_date, checkout_date) {
 
   newCheckInDateFormat=yearCheckIn+monthCheckInNumber+dateCheckIn;
   newCheckOutDateFormat=yearCheckOut+monthCheckOutNumber+dateCheckOut;
-  console.log(newCheckInDateFormat,'checkin');
-  console.log(newCheckOutDateFormat,'checkout');
-  var url='https://www.booking.com/hotel/gr/vivian-apartments-rethumno.en-gb.html?aid=311984&label=vivian-apartments-rethumno-PunsJS8o87SGzFAM8MSGGwS589959799561%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1645839500805%3Alp9067713%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YTQUGSsRwx9_3qo3uPTHyoo&sid=f8a17736a09719e824301069fbb5af1d&all_sr_blocks=530627817_364229555_4_0_0;checkin='+newCheckInDateFormat+';checkout='+newCheckOutDateFormat+';dest_id=-827465;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=530627817_364229555_4_0_0;hpos=1;matching_block_id=530627817_364229555_4_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=530627817_364229555_4_0_0__113548;srepoch=1680371105;srpvid=910f7cd0307100b8;type=total;ucfs=1&#hotelTmpl';
+  //console.log(newCheckInDateFormat,'checkin');
+  //console.log(newCheckOutDateFormat,'checkout');
+  var url='https://www.booking.com/hotel/gr/vivian-apartments-rethumno.en-gb.html?aid=311984&label=vivian-apartments-rethumno-PunsJS8o87SGzFAM8MSGGwS589959799561%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1645839500805%3Alp9067713%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YTQUGSsRwx9_3qo3uPTHyoo&sid=f8a17736a09719e824301069fbb5af1d&all_sr_blocks=530627817_364229555_4_0_0;checkin='+newCheckInDateFormat+';checkout='+newCheckOutDateFormat+';dest_id=-827465;dest_type=city;dist=0;group_adults='+adults+';group_children='+children+';hapos=1;highlighted_blocks=530627817_364229555_4_0_0;hpos=1;matching_block_id=530627817_364229555_4_0_0;no_rooms=1;req_adults='+adults+';req_children='+children+';room1=A%2CA;sb_price_type=total;sr_order=popularity;ucfs=1&#hotelTmpl';
+           
   window.open(url, '_blank');
   
 }

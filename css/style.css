@@ -62,13 +62,14 @@ h1, h2, h3, h4, h5 {
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: .2em; }
-  .btn-reservation{
+    
+.btn-reservation{
     background: skyblue;
     border: 2px solid #fff;}
       .btn-reservation:hover {
       border: 2px solid transparent;
       background: #1275D1;
-      color: #fff; }
+      color: #fff; }  
 
 .btn, .form-control {
   outline: none;
